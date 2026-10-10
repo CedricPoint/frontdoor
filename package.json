@@ -1,0 +1,48 @@
+{
+  "name": "frontdoor",
+  "version": "0.1.0",
+  "description": "Checks the front door of a website — TLS, redirects, security headers and cookie flags — and prints the nginx, Caddy or Apache lines that fix what is missing.",
+  "type": "module",
+  "bin": {
+    "frontdoor": "bin/frontdoor.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "README.fr.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/run.js",
+    "check": "node bin/frontdoor.js"
+  },
+  "keywords": [
+    "security",
+    "security-headers",
+    "tls",
+    "https",
+    "hsts",
+    "csp",
+    "cli",
+    "devops",
+    "nginx",
+    "caddy"
+  ],
+  "license": "MIT",
+  "author": "CedricPoint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CedricPoint/frontdoor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CedricPoint/frontdoor/issues"
+  },
+  "homepage": "https://github.com/CedricPoint/frontdoor#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
